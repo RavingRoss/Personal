@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <body>
+
+        <table border = 1>
+            <thead>
+                <td>Name</td>
+                <td>Classification</td>
+                <td>Constellation</td>
+                <td>Coordinates</td>
+            </thead>
+
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["name"]}}</td>
+                    <td>{{row["class"]}}</td>
+                    <td>{{row["const"]}}</td>
+                    <td>{{row["coord"]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <a href = "/">Go back to home page</a>
+        
+    </body>
+</html>
+
